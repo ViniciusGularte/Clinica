@@ -46,6 +46,13 @@ if($_SESSION['acesso'] =='paciente'){
     echo('</form>');
 }
 else if($_SESSION['acesso'] == 'medico'){
+    echo('<form method="post" id="lista_consultas">');
+    echo('<h4>Visualize suas consultas pendentes na data respectiva:</h4>');
+    echo('<br/>');
+    echo("<input type='date' name='data'/>");
+
+    echo('<button type="submit">Procurar</button>');
+    echo('</form>');
 
 }
 

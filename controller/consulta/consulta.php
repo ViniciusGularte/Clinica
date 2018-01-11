@@ -1,7 +1,33 @@
 <?php
 require_once '../../models/Consulta.php';
-require_once '../../helpers/Valida.php';
-
+session_start();
 $usuario = new Consulta();
-$valida = new Valida();
+$paciente = $_SESSION['usuario'];
 $data = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+
+
+$usuario->setData($data['data']);
+$usuario->setIdMedico($data['medico']);
+$usuario->setIdPaciente($paciente);
+$usuario->setObservacao($data['observacoes']);
+
+
+$resultado =$usuario->find();
+if($resultado != NULL){
+
+echo"<script>alert('Ja existe consulta marcada para esse dia com esse médico, verifique outros médicos da área ou tente outra data.';
+window.top.location('../../view/painel.php');
+</script>')";
+    return;
+}
+
+
+// Realiza a inserção da consulta
+if($usuario->insert()){
+    echo "<script>alert('Cadastrado com sucesso!');window.top.location('../../view/painel.php');</script>');";
+}
+else{
+    echo "<script>alert('Erro no cadastro');window.top.location('../../view/painel.php');</script>');";
+}
+
