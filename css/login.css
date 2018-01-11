@@ -1,0 +1,50 @@
+body {
+  width: auto;
+  height: auto;
+  margin: auto;
+
+}
+h1{
+  font-weight: inherit;
+}
+label{
+  font-weight: bold;
+}
+.tab-content{
+align-items: center;
+}
+.form-login-paciente{
+  text-align: center;
+}
+.form-login {
+  margin-top: 5%;
+  margin-left: 20%;
+  text-align: center;
+  align-content: center;
+  width: 60%;
+
+}
+
+.tab a {
+  color: #1c1c1c;
+  font-size: 16px;
+font-weight: normal;
+font-family: "Lato Black";
+}
+
+#wallpaper_login {
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-image: url("../img/wallpaper_Index.jpg"); }
+.btn_login{
+  color: aliceblue;
+  width: 40%;
+  height: 100%;
+  background-color: #405da2;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.btn_login:active{
+  background-color: #273d67;
+}
