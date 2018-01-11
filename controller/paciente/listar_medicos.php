@@ -15,10 +15,13 @@ if($valida->Campos($data) == true) {
 
 
 foreach($usuario->findMedicos($data['categoria']) as $key => $value)
-{    echo("<br/>");
+{
+
+    echo("<br/>");
      echo("<table>");
      echo("<tr> Nome: ".$value->nome_medico."");
      echo("<td>CRM: ".$value->crm."</td></tr>");
-    echo("<th ><button name='' value='Marcar Consulta'>Marcar Consulta</button></th>");
+    echo("<th ><button name='".$value->id_medico."' id='".$value->id_medico."' onclick='showConsultaCategoria(name)'  value='' >Marcar Consulta</button></th>");
     echo("</table>");
+
 }

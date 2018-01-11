@@ -48,3 +48,20 @@ font-family: "Lato Black";
 .btn_login:active{
   background-color: #273d67;
 }
+#tituloIndex{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#imagem1{
+  position: relative;
+  padding-left: 25%;
+
+
+}
+#imagem2{
+  padding-left: 25%;
+
+
+  position: relative;
+}

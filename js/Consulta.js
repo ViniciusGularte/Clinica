@@ -1,9 +1,8 @@
 var req2;
 
 
-//Aqui gera o conteudo da sobre os medicos da categoria especifica
+// para usuario marcar consulta
 showConsultaCategoria =function(id) {
-
 
     // Verificando Browser
     if (window.XMLHttpRequest) {
@@ -14,7 +13,7 @@ showConsultaCategoria =function(id) {
     }
 
 // Arquivo PHP juntamente com o valor enviado pelo botao
-    var url2 = "?id=" + id;
+    var url2 = "../controller/consulta/gerarConsulta.php?id=" + id;
 
 // Chamada do método open para processar a requisição
     req2.open("Get", url2, true);

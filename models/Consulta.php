@@ -1,7 +1,7 @@
 <?php
 require_once 'DB.php';
 
-class Medico {
+class Consulta {
 	
 	protected $table = 'Medico';
 	private $nome;
