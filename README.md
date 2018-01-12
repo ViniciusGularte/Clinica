@@ -12,6 +12,7 @@ foi utilizado AJax da biblioteca do jquery.
 Definição do layout foi utilizado apenas css3 e html5.
 
 
+
 #Utilizades do projeto:
 
 Cadastrar/Login de pacientes.
@@ -30,7 +31,10 @@ O medico pode visualizar as consultas pendentes a ele e suas datas
 
 Um usuario não pode marcar uma consulta no mesmo dia que outro usuario
 
+Foi criado um evento dentro do banco de dados
+que deleta diariamente todas consultas que já venceram a data.
 
+O usuario (paciente/medico) pode deletar ele mesmo do banco de dados
 
 
 
@@ -43,7 +47,7 @@ HTML 5
 Javascript
 AJAX
 CSS3
-
+Mysql
 
 #Segurança do sistema
 

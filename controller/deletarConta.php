@@ -20,7 +20,6 @@ require_once '../models/Paciente.php';
 
 $usuario->setId($id);
 $usuario->delete($id);
-header("../../controller/session.php");
-
+include 'session.php';
 
 
