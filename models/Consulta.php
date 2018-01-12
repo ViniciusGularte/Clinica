@@ -49,7 +49,7 @@ class Consulta {
         $stmt->bindParam(':medico', $this->id_medico);
 
         $stmt->execute();
-        return $stmt->fetch();
+        return $stmt->fetchAll();
 
     }
 
@@ -58,6 +58,15 @@ class Consulta {
         $stmt = DB::prepare($sql);
 
         $stmt->bindParam(':categoria', $id, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll();
+
+    }
+    public function findConsultaMedico($id){
+        $sql  = "SELECT * FROM $this->table WHERE data_consulta = :data";
+        $stmt = DB::prepare($sql);
+
+        $stmt->bindParam(':data', $id);
         $stmt->execute();
         return $stmt->fetchAll();
 

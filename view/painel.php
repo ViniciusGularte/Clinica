@@ -51,7 +51,7 @@ else if($_SESSION['acesso'] == 'medico'){
     echo('<br/>');
     echo("<input type='date' name='data'/>");
 
-    echo('<button type="submit">Procurar</button>');
+    echo('<button type="submit">Visualizar</button>');
     echo('</form>');
 
 }
@@ -71,6 +71,25 @@ else if($_SESSION['acesso'] == 'medico'){
             jQuery.ajax({
                 type: "POST",
                 url: "../controller/paciente/listar_medicos.php",
+                data: dados,
+                success: function(data)
+                {
+                    $('#conteudo_painel').html(data);
+                }
+            });
+
+            return false;
+        });
+    });
+</script>
+<script type="text/javascript">
+
+    jQuery(document).ready(function(){
+        jQuery('#lista_consultas').submit(function(){
+            var dados = jQuery( this ).serialize();
+            jQuery.ajax({
+                type: "POST",
+                url: "../controller/medico/listar_consultas.php",
                 data: dados,
                 success: function(data)
                 {

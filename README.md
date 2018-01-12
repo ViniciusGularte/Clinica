@@ -24,12 +24,11 @@ Retorna lista de médicos por categoria
 
 Possibilita o usuario marcar uma consulta 
 
-A estrutura do banco de dados possibilita um paciente
-por consulta, até essa consulta não estiver finalizada não podera realizar outra
-
 Um modelo apenas para realizar verificações dos dados inseridos.
 
 O medico pode visualizar as consultas pendentes a ele e suas datas
+
+Um usuario não pode marcar uma consulta no mesmo dia que outro usuario
 
 
 
