@@ -54,3 +54,25 @@ Mysql
 
 Para proteger o sistema contra sqlinjections 
 foi utilizado o bindParam do proprio PDO para proteção.
+
+#Configurações
+
+Dados para configurar o banco de dados se encontram em /models/config.inc
+
+Paciente cadastro dados de acesso:
+
+E-mail paciente@gmail.com Senha: 123
+
+E-mail medico@gmail.com Senha: 123
+
+Base de dados na pasta raiz do projeto
+
+#Considerações finais
+
+Agradeço a oportunidade que me foi dada pela equipe facil consulta de realizar
+esse projeto.Um grande abraço a todos.
+
+Sobre os commits, foi por falta de atenção e não commitei todo processo de desenvolvimento do sistema,
+se for preciso tenho os logs gerados pela ide desde a estruturação do modelo MVC a criação das classes
+para verificação de autenticidade do código.
+Qualquer duvida/sugestão/problema me contatem pelo meu e-mail viniciusgulartemartin@gmail.com
